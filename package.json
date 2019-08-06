@@ -1,0 +1,29 @@
+{
+  "name": "js-snippets",
+  "version": "0.0.1",
+  "description": "Useful Javascript tools",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paratagas/js-snippets.git"
+  },
+  "engines": {
+    "npm": ">=5",
+    "node": ">=8.10.0"
+  },
+  "author": {
+    "name": "Evgeni Sviridenko",
+    "email": "paratagas@mail.ru",
+    "url": "https://github.com/paratagas"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "npm run lint",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "lint-staged": "7.3.0"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
