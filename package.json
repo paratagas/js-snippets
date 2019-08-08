@@ -17,11 +17,13 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "npm run lint",
+    "lint": "eslint ./lib ./test --ignore-path .gitignore --ignore-pattern coverage",
+    "lint:fix": "eslint --fix ./lib ./test --ignore-path .gitignore --ignore-pattern coverage",
     "test": "jest --coverage"
   },
   "devDependencies": {
-    "lint-staged": "7.3.0"
+    "babel-eslint": "^10.0.0",
+    "eslint": "^6.1.0"
   },
   "dependencies": {
     "jest": "^24.8.0"
