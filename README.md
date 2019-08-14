@@ -17,7 +17,10 @@
 ### Covered topics:
  - array
  - function
+ - object
  - set
+ - string
+
 ---
 ## Actions:
 

@@ -25,6 +25,16 @@
     "test:report": "jest --config jest.config.json && google-chrome ./coverage/lcov-report/index.html",
     "sandbox": "node ./sandbox.js"
   },
+  "tags": [
+    "javascript",
+    "js-snippets",
+    "es6",
+    "node.js",
+    "data-structures",
+    "patterns",
+    "jsdoc",
+    "linting"
+  ],
   "devDependencies": {
     "babel-eslint": "^10.0.0",
     "eslint": "^6.1.0",
