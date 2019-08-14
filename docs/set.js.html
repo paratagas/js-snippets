@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: set.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: set.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Create intersection of two sets
+ *
+ * Time complexity: O(n)
+ * 
+ * @param {set} setA First set
+ * @param {set} setB Second set
+ * 
+ * @returns {set} Intersection of two sets
+ */
+function createTwoSetsIntersection(setA, setB) {
+  let intersection = new Set();
+
+  for (let item of setB) {
+    if (setA.has(item)) {
+      intersection.add(item);
+    }
+  }
+
+  return intersection;
+}
+
+/**
+ * Create intersection of three sets
+ *
+ * Time complexity: O(n)
+ * 
+ * @param {set} setA First set
+ * @param {set} setB Second set
+ * @param {set} setC Third set
+ * 
+ * @returns {set} Intersection of three sets
+ */
+function createThreeSetsIntersection(setA, setB, setC) {
+  let intersection = new Set();
+  
+  for (let item of setA) {
+    if (setB.has(item) &amp;&amp; setC.has(item)) {
+      intersection.add(item);
+    }
+  }
+  
+  return intersection;
+}
+
+/**
+ * Check whether one set is a superset of another (contains all the items of the other set)
+ *
+ * Time complexity: O(n)
+ * 
+ * @param {set} superset Tested to be superset
+ * @param {set} subset All its items supposed to be in superset
+ * 
+ * @returns {boolean} Value of check
+ */
+function isSuperset(superset, subset) {
+  for (let item of subset) {
+    if (!superset.has(item)) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Create a new set of two united sets without duplicates
+ *
+ * Time complexity: O(n). For more than 2 sets use uniteManySets
+ *
+ * @param {set} setA Set to unite
+ * @param {set} setB Set to unite
+ *
+ * @returns {set} United two sets (unsorted)
+ */
+function uniteTwoSets(setA, setB) {
+  let union = new Set(setA);
+
+  for (let item of setB) {
+    union.add(item);
+  }
+
+  return union;
+}
+
+/**
+ * Create a new set of many united sets without duplicates
+ *
+ * Time complexity: O(n2). For 2 sets use uniteTwoSets
+ *
+ * @param {set} sets Sets to unite
+ *
+ * @returns {set} United sets (unsorted)
+ */
+function uniteManySets(...sets) {
+  let union = new Set();
+
+  for (let set of sets) {
+    for (let item of set) {
+      union.add(item);
+    }
+  }
+
+  return union;
+}
+
+/**
+ * Create difference of setA from setB:
+ * all of the elements in setA that are not in setB
+ *
+ * Time complexity: O(n)
+ *
+ * @param {set} setA Set to check for different items
+ * @param {set} setB Set to compare to
+ *
+ * @returns {set} Difference
+ */
+function createTwoSetsDifference(setA, setB) {
+  let difference = new Set(setA);
+
+  for (let item of setB) {
+    difference.delete(item);
+  }
+
+  return difference;
+}
+
+/* export: */
+exports.createTwoSetsIntersection = createTwoSetsIntersection;
+exports.createThreeSetsIntersection = createThreeSetsIntersection;
+exports.isSuperset = isSuperset;
+exports.uniteTwoSets = uniteTwoSets;
+exports.uniteManySets = uniteManySets;
+exports.createTwoSetsDifference = createTwoSetsDifference;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#checkArrayForDuplicates">checkArrayForDuplicates</a></li><li><a href="global.html#composeFunctions">composeFunctions</a></li><li><a href="global.html#composeFunctionsPlusReversed">composeFunctionsPlusReversed</a></li><li><a href="global.html#createThreeSetsIntersection">createThreeSetsIntersection</a></li><li><a href="global.html#createTwoArraysUniqueDifferenceUnion">createTwoArraysUniqueDifferenceUnion</a></li><li><a href="global.html#createTwoArraysUniqueUnion">createTwoArraysUniqueUnion</a></li><li><a href="global.html#createTwoSetsDifference">createTwoSetsDifference</a></li><li><a href="global.html#createTwoSetsIntersection">createTwoSetsIntersection</a></li><li><a href="global.html#isPalindrome">isPalindrome</a></li><li><a href="global.html#isSuperset">isSuperset</a></li><li><a href="global.html#makeArrayUnique">makeArrayUnique</a></li><li><a href="global.html#objectLogger">objectLogger</a></li><li><a href="global.html#reverseString">reverseString</a></li><li><a href="global.html#trimString">trimString</a></li><li><a href="global.html#uniteManySets">uniteManySets</a></li><li><a href="global.html#uniteTwoSets">uniteTwoSets</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Wed Aug 14 2019 21:19:35 GMT+0300 (GMT+03:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

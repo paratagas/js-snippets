@@ -17,15 +17,18 @@
   },
   "license": "MIT",
   "scripts": {
+    "jsdoc": "jsdoc ./lib --destination ./docs",
+    "jsdoc:report": "jsdoc ./lib --destination ./docs && google-chrome ./docs/index.html",
     "lint": "eslint ./lib ./test --ignore-path .gitignore --ignore-pattern coverage",
     "lint:fix": "eslint --fix ./lib ./test --ignore-path .gitignore --ignore-pattern coverage",
-    "test": "jest --coverage"
+    "test": "jest --config jest.config.json",
+    "test:report": "jest --config jest.config.json && google-chrome ./coverage/lcov-report/index.html",
+    "sandbox": "node ./sandbox.js"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.0",
-    "eslint": "^6.1.0"
-  },
-  "dependencies": {
-    "jest": "^24.8.0"
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.3"
   }
 }

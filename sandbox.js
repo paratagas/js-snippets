@@ -1,8 +1,33 @@
+/*
 const {
-	createTwoSetsIntersectionToSet,
+  isPalindrome,
 } = require('./lib');
 
-const set1 = new Set([1, 2, 3, 4, 5, 10, 20]);
-const set2 = new Set([5, 8, 20]);
+console.log(isPalindrome('Was it a car or a cat I saw'));
+*/
 
-console.log(createTwoSetsIntersectionToSet(set1, set2)); // Set {5, 20}
+/*
+const {
+  trimString,
+} = require('./lib');
+
+console.log(trimString(' Some random string with spaces inside and  outside  '));
+*/
+
+/*
+const {
+  makeArrayUnique,
+} = require('./lib');
+
+console.log(makeArrayUnique([1, 2, 1, 6, 7, 7, 1, 8]));
+console.log(makeArrayUnique([ 'str1', 'str2', 'str3', 'str1', 'str1' ]));
+*/
+
+const {
+  objectLogger,
+} = require('./lib');
+
+let objToLog = {};
+let loggedObj = objectLogger(objToLog);
+loggedObj.name = 'Evgeni';
+loggedObj.age = 38;
