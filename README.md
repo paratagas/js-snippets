@@ -4,19 +4,20 @@
 ---
 
 ### Documentation:
-![Documentation](https://i.imgur.com/5Q0Kvv7.png)
+![Documentation](https://i.imgur.com/8AbccmE.png)
 
 ---
 
 
 ### Code test coverage:
-![Code test coverage](https://i.imgur.com/SvnDaZm.png)
+![Code test coverage](https://i.imgur.com/cpmY0E5.png)
 
 ---
 
 ### Covered topics:
  - array
  - function
+ - number
  - object
  - set
  - string

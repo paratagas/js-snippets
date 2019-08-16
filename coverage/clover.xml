@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1565948787117" clover="3.2.0">
-  <project timestamp="1565948787118" name="All files">
+<coverage generated="1565966142007" clover="3.2.0">
+  <project timestamp="1565966142008" name="All files">
     <metrics statements="114" coveredstatements="114" conditionals="10" coveredconditionals="9" methods="26" coveredmethods="26" elements="150" coveredelements="149" complexity="0" loc="114" ncloc="114" packages="1" files="7" classes="7"/>
     <file name="array.js" path="C:\server\www\js-snippets\lib\array.js">
       <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
@@ -59,8 +59,8 @@
     </file>
     <file name="number.js" path="C:\server\www\js-snippets\lib\number.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="11" count="6" type="stmt"/>
-      <line num="14" count="6" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
     </file>
     <file name="object.js" path="C:\server\www\js-snippets\lib\object.js">
       <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>

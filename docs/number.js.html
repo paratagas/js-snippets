@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: object.js</title>
+    <title>JSDoc: Source: number.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: object.js</h1>
+    <h1 class="page-title">Source: number.js</h1>
 
     
 
@@ -26,60 +26,22 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/* eslint-disable no-console */
-/**
- * Create object-wrapper which logs significant object access events
- * Uses Proxy and Reflect API
+            <pre class="prettyprint source linenums"><code>/**
+ * Compare if two numbers are nearly equal
+ * Solve a famous problem when 0.1 + 0.2 !== 0.3
+ * Considers rounding error in IEEE 754 standard languages (incl. Javascript)
  *
  * Time complexity: O(1)
  *
- * @param {object} obj Object to wrap in logger
+ * @param {number} number1 Number to compare
+ * @param {number} number2 Number to compare to
  *
- * @returns {object} Object wrapped in logger
+ * @returns {boolean} Result of comparison: true if numbers are equal, false - if not
  */
-function objectLogger(obj) {
-  return new Proxy(obj, {
-    set(target, propName, propValue, receiver) {
-      console.group(`For logged object ${JSON.stringify(target)} was set:`);
-      console.log(`Property ${propName} to value ${propValue}`);
-      console.groupEnd();
-
-      return Reflect.set(target, propName, propValue, receiver);
-    },
-    get(target, propName, receiver) {
-      console.group(`From logged object ${JSON.stringify(target)} get:`);
-      console.log(`Property ${propName} with value ${target[propName]}`);
-      console.groupEnd();
-
-      return Reflect.get(target, propName, receiver);
-    },
-    has(target, propName) {
-      console.group(`In logged object ${JSON.stringify(target)} was checked property:`);
-      console.log(propName);
-      console.groupEnd();
-
-      return Reflect.has(target, propName);
-    },
-    deleteProperty(target, propName) {
-      console.group(`In logged object ${JSON.stringify(target)} was deleted property:`);
-      console.log(propName);
-      console.groupEnd();
-
-      return Reflect.deleteProperty(target, propName);
-    },
-    defineProperty(target, propName, descriptor) {
-      console.group(`In logged object ${JSON.stringify(target)} was defined property:`);
-      console.log(propName);
-      console.groupEnd();
-
-      return Reflect.defineProperty(target, propName, descriptor);
-    }
-  });
-}
-/* eslint-enable */
+const numbersAreNearlyEqual = (number1, number2) => Math.abs(number1 - number2) &lt; Number.EPSILON;
 
 /* export: */
-exports.objectLogger = objectLogger;
+exports.numbersAreNearlyEqual = numbersAreNearlyEqual;
 </code></pre>
         </article>
     </section>
