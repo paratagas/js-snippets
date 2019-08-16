@@ -35,6 +35,7 @@ loggedObj.age = 38;
 
 */
 
+/*
 const {
   numbersAreNearlyEqual,
 } = require('./lib');
@@ -43,3 +44,6 @@ const num1 = 0.1 + 0.2;
 const num2 = 0.3;
 console.log(num1 === num2);
 console.log(numbersAreNearlyEqual(num1, num2));
+*/
+
+
