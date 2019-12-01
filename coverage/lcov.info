@@ -1,5 +1,5 @@
 TN:
-SF:C:\server\www\js-snippets\lib\array.js
+SF:/home/evgeni/projects/js-snippets/lib/array.js
 FN:10,(anonymous_0)
 FN:21,(anonymous_1)
 FN:33,(anonymous_2)
@@ -30,7 +30,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\server\www\js-snippets\lib\function.js
+SF:/home/evgeni/projects/js-snippets/lib/function.js
 FN:11,(anonymous_0)
 FN:11,(anonymous_1)
 FN:13,(anonymous_2)
@@ -62,7 +62,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:C:\server\www\js-snippets\lib\index.js
+SF:/home/evgeni/projects/js-snippets/lib/index.js
 FNF:0
 FNH:0
 DA:9,6
@@ -94,7 +94,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\server\www\js-snippets\lib\number.js
+SF:/home/evgeni/projects/js-snippets/lib/number.js
 FN:13,(anonymous_0)
 FNF:1
 FNH:1
@@ -107,7 +107,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\server\www\js-snippets\lib\object.js
+SF:/home/evgeni/projects/js-snippets/lib/object.js
 FN:12,objectLogger
 FN:14,(anonymous_1)
 FN:21,(anonymous_2)
@@ -150,7 +150,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\server\www\js-snippets\lib\set.js
+SF:/home/evgeni/projects/js-snippets/lib/set.js
 FN:11,createTwoSetsIntersection
 FN:34,createThreeSetsIntersection
 FN:56,isSuperset
@@ -212,7 +212,7 @@ BRF:8
 BRH:7
 end_of_record
 TN:
-SF:C:\server\www\js-snippets\lib\string.js
+SF:/home/evgeni/projects/js-snippets/lib/string.js
 FN:10,(anonymous_0)
 FN:21,(anonymous_1)
 FN:34,isPalindrome

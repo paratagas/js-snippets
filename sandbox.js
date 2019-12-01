@@ -1,10 +1,10 @@
-/*
+
 const {
   isPalindrome,
 } = require('./lib');
 
 console.log(isPalindrome('Was it a car or a cat I saw'));
-*/
+
 
 /*
 const {
