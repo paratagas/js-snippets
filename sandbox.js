@@ -1,10 +1,10 @@
-
+/*
 const {
   isPalindrome,
 } = require('./lib');
 
 console.log(isPalindrome('Was it a car or a cat I saw'));
-
+*/
 
 /*
 const {
@@ -46,4 +46,13 @@ console.log(num1 === num2);
 console.log(numbersAreNearlyEqual(num1, num2));
 */
 
+const {
+  createMatrixOfSymbols,
+  createSlicedMatrixOfSymbols,
+} = require('./lib');
 
+// createMatrixOfSymbols(10, '&');
+createSlicedMatrixOfSymbols(5, '*');
+createSlicedMatrixOfSymbols(10, '=', false);
+
+// git clone https://github.com/paratagas/js-snippets.git js-snippets
