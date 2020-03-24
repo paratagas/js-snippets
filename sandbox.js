@@ -54,5 +54,3 @@ const {
 // createMatrixOfSymbols(10, '&');
 createSlicedMatrixOfSymbols(5, '*');
 createSlicedMatrixOfSymbols(10, '=', false);
-
-// git clone https://github.com/paratagas/js-snippets.git js-snippets
